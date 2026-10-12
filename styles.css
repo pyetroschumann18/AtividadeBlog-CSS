@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap'); /*Para importar a fonte do google */
+body {
+    margin: 0; /*Deixa 100% Cheia na tela em margin lateral*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 255 , 255); /*Corpo em Fundo Branco RGB */
+    color: hsl(220, 15%, 20%); /*Color para Texto. HSL: 1:Matiz-CorPura dentro da roda de cores. 2:Saturation-Intensidade da cor. 3:Lightness-Força do preto ou branco */
+    line-height: 1.7; /* Espaço entre as linhas de forma vertical. Espaçamento vertical de um parágrafo */
+}
+nav {
+    background-color: rgb(rgb(21, 21, 21));
+    color: white;
+    padding: 32px 60px; /*Espaço interno do elemento, ele define o quão espaçosa vai ser a bara em largura e altura */
+}
+nav h1{
+    font-family: serif;
+    font-size: 36px;
+    margin: 0;
+}
+nav p{
+   margin-top: 8px;  /* cria um espaço acima do elemento de 8px, empurrando o elemento acima, com 8px. De top, P terá 8px de distancia do h1*/
+    margin-bottom: 0; /*Faz o elemento abaixo Perder o espaço, ficara colado na parte inferior ao <P>*/
+    color: white;
+}
+/* Layout estrutural da pagina, Garantindo que os espaços menores dentro das tags não fiquem bagunçados dentro da páginas ou com pixels diferentes, margim ou max-width */
+body > h2, /*o Final de maior é pra simbolizar filho direto. Ou seja, Body é pai de h2*/
+body > h3, 
+body > p, /*Aqui você está dizendo ao CSS aplicar estilo somente aos <p> que forem filho direto de P. Lembre-se sinal ">" Filho direto " " espaço é independente*/
+body > .linha, /*A virgula serve para aplicar o mesmo principio a Todos selecionados sem que haja bagunça */
+body > button {
+    max-width: 800px;  /* Para que esse truque funcione, o elemento precisa ter uma largura definida (seja em px, %, vw, rem, etc.) ou uma largura máxima (max-width). */
+    margin-left: auto;  /*Centralizar Cima/Baixo*/
+    margin-right: auto; /*Centralizar Esquerda/Direita*/
+}
+h2{
+    font-family: sans-serif;
+    font-size: 42px;
+    color: black;
+
+    margin-top: 60px; /*60px do elemento acima. Lembre-se: Margin-top é acima do elemento*/ 
+    margin-bottom: 15px; /*15px De distância do elemento abaixo. Lembre-se:Margin-Bottom é abaixo */
+}
+.linha{
+    height: 3px;
+    background-color: hsl(25, 95%, 55%);
+    margin-bottom: 25px;
+}
+p{
+    font-size: 17px;
+    color: hsl(220, 10%, 30%);
+    margin-top: 16px;
+    margin-bottom: 22px;
+}
+body{
+    line-height: 1.7;
+}
+h3{
+    font-family: serif;
+    font-size: 28px;
+    color: black;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+button{
+    background-color: hsl(25, 95%, 55%);
+    color: azure;
+    padding: 14px, 22px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+button:hover{
+     background-color: hsl(25, 100%, 81%);
+}
